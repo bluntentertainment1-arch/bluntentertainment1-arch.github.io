@@ -61,10 +61,21 @@
       font-size: 16px;
       box-shadow: 0 0 30px rgba(159, 107, 255, 0.55);
       transition: transform 0.2s ease;
+      margin: 8px;
     }
 
     .cta:hover {
       transform: scale(1.05);
+    }
+
+    .cta.secondary {
+      background: transparent;
+      border: 2px solid #7b3fe4;
+      box-shadow: none;
+    }
+
+    .cta.secondary:hover {
+      background: rgba(123, 63, 228, 0.15);
     }
 
     /* FEATURES */
@@ -127,11 +138,6 @@
       margin: auto;
     }
 
-    /* FINAL CTA */
-    .final-cta {
-      margin-top: 60px;
-    }
-
     /* FOOTER */
     footer {
       margin-top: 80px;
@@ -157,16 +163,26 @@
     <h1>Device Tuner Pro 26</h1>
     <p>
       Take control of your device before you play. Free up storage, remove unwanted photos,
-      access helpful settings, and enable Gaming Mode from one powerful interface.
+      access helpful settings, and manage your device experience during gaming.
     </p>
 
-    <a
-      class="cta"
-      href="https://apps.apple.com/ng/app/device-tuner-pro-26/id6757767956"
-      target="_blank"
-    >
-      Download on the App Store
-    </a>
+    <div>
+      <a
+        class="cta"
+        href="https://apps.apple.com/ng/app/device-tuner-pro-26/id6757767956"
+        target="_blank"
+      >
+        Download on App Store
+      </a>
+
+      <a
+        class="cta secondary"
+        href="https://play.google.com/store/apps/details?id=com.kidblunt.devicetunerpro26&pcampaignid=web_share"
+        target="_blank"
+      >
+        Get it on Google Play
+      </a>
+    </div>
   </section>
 
   <!-- FEATURES -->
@@ -180,7 +196,7 @@
           </svg>
         </div>
         <h3>Game Mode</h3>
-        <p>Reduce background activity during gaming to help maintain smooth, stable performance.</p>
+        <p>Reduce background activity during gaming to help maintain smooth, stable sessions.</p>
       </div>
 
       <div class="card">
@@ -190,7 +206,7 @@
           </svg>
         </div>
         <h3>Storage Cleanup</h3>
-        <p>Identify unwanted photos and files to reclaim valuable storage space.</p>
+        <p>Identify and remove unwanted photos and files to reclaim storage space.</p>
       </div>
 
       <div class="card">
@@ -200,7 +216,7 @@
           </svg>
         </div>
         <h3>Battery Monitoring</h3>
-        <p>Understand power usage and spot apps draining your battery.</p>
+        <p>View battery usage details and understand how apps use power.</p>
       </div>
 
       <div class="card">
@@ -210,24 +226,32 @@
           </svg>
         </div>
         <h3>Light & Dark Theme</h3>
-        <p>Switch themes anytime for comfortable viewing day or night.</p>
+        <p>Switch between light and dark themes for comfortable viewing anytime.</p>
       </div>
 
     </div>
   </section>
 
-  <!-- DESIGN -->
+  <!-- FINAL CTA -->
   <section class="section">
     <h2>Designed for Everyday Use</h2>
-    <p>A clean, distraction-free interface built for clarity, speed, and control.</p>
+    <p>A clean, distraction-free interface built for clarity and control.</p>
 
-    <div class="final-cta">
+    <div style="margin-top:40px;">
       <a
         class="cta"
         href="https://apps.apple.com/ng/app/device-tuner-pro-26/id6757767956"
         target="_blank"
       >
-        Get Device Tuner Pro 26
+        Download for iPhone
+      </a>
+
+      <a
+        class="cta secondary"
+        href="https://play.google.com/store/apps/details?id=com.kidblunt.devicetunerpro26&pcampaignid=web_share"
+        target="_blank"
+      >
+        Download for Android
       </a>
     </div>
   </section>
