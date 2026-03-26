@@ -1,91 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Work Visa Jobs</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    /* Base Styles */
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background-color: #ffffff; color: #111; line-height: 1.6; }
-    a { text-decoration: none; transition: 0.3s; }
-    a:hover { opacity: 0.8; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Work Visa Jobs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: #ffffff; color: #000; line-height: 1.6; }
 
-    /* Navbar */
-    nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background-color: #ffffff; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #ddd; }
-    nav .logo { color: #007bff; font-size: 24px; font-weight: 700; }
-    nav ul { display: flex; list-style: none; gap: 30px; }
-    nav ul li a { color: #007bff; font-weight: 600; font-size: 16px; }
+        /* Navbar */
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 20px 40px; 
+            background-color: #ffffff; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+            border-bottom: 1px solid #ddd; 
+        }
+        nav .logo { 
+            color: #007bff; 
+            font-size: 24px; 
+            font-weight: 700; 
+        }
+        nav ul { 
+            display: flex; 
+            list-style: none; 
+            gap: 15px; 
+        }
+        nav ul li a { 
+            color: #007bff; 
+            font-weight: 600; 
+            font-size: 16px; 
+            padding: 8px 15px; 
+            border: 2px solid #007bff; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            transition: 0.3s; 
+        }
+        nav ul li a:hover { 
+            background-color: #007bff; 
+            color: #ffffff; 
+        }
 
-    /* Hero Section */
-    .hero { text-align: center; padding: 80px 20px; }
-    .hero img { width: 200px; height: auto; margin-bottom: 30px; border-radius: 25%; }
-    .hero h1 { font-size: 36px; color: #007bff; margin-bottom: 20px; font-weight: 700; }
-    .hero p { font-size: 18px; color: #333; margin-bottom: 30px; }
-    .hero .btn { background-color: #007bff; color: #fff; padding: 15px 30px; margin: 10px; border-radius: 8px; font-weight: 600; display: inline-block; }
-    .hero .btn:hover { opacity: 0.9; }
+        /* Hero Section */
+        .hero { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+            padding: 100px 20px 60px 20px; 
+        }
+        .hero img { 
+            width: 200px; 
+            height: auto; 
+            margin-bottom: 30px; 
+        }
+        .hero h1 { 
+            font-size: 36px; 
+            color: #007bff; 
+            margin-bottom: 20px; 
+        }
+        .hero p { 
+            font-size: 18px; 
+            margin-bottom: 30px; 
+            max-width: 600px; 
+        }
+        .hero .buttons { 
+            display: flex; 
+            gap: 20px; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+        }
+        .hero .buttons a { 
+            background-color: #007bff; 
+            color: #fff; 
+            padding: 12px 25px; 
+            border-radius: 10px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: 0.3s; 
+        }
+        .hero .buttons a:hover { 
+            background-color: #0056b3; 
+        }
 
-    /* Features Section */
-    .features { max-width: 900px; margin: 50px auto; padding: 0 20px; }
-    .features h2 { font-size: 28px; color: #007bff; margin-bottom: 20px; text-align: center; }
-    .features ul { list-style: disc; padding-left: 20px; }
-    .features li { font-size: 16px; margin-bottom: 10px; }
+        /* Footer */
+        footer { 
+            background-color: #f8f8f8; 
+            text-align: center; 
+            padding: 20px; 
+            margin-top: 50px; 
+        }
+        footer a { 
+            color: #007bff; 
+            text-decoration: none; 
+            font-weight: 600; 
+            margin: 0 10px; 
+            border: 2px solid #007bff; 
+            padding: 5px 10px; 
+            border-radius: 6px; 
+            transition: 0.3s; 
+        }
+        footer a:hover { 
+            background-color: #007bff; 
+            color: #fff; 
+        }
 
-    /* Footer */
-    footer { background-color: #111; color: #fff; text-align: center; padding: 40px 20px; }
-    footer a { color: #007bff; margin: 0 10px; }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 28px; }
-      .hero p { font-size: 16px; }
-      .features h2 { font-size: 24px; }
-      .features li { font-size: 15px; }
-    }
-  </style>
+        /* Responsive */
+        @media(max-width: 768px) {
+            nav { flex-direction: column; gap: 15px; }
+            .hero h1 { font-size: 28px; }
+            .hero p { font-size: 16px; }
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <a href="index.html" class="logo">Global Work Visa Jobs</a>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="privacy/index.html">Privacy Policy</a></li>
-      <li><a href="about/index.html">About Us</a></li>
-    </ul>
-  </nav>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Global Work Visa Jobs</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+        </ul>
+    </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="https://i.ibb.co/s9pxG7yM/IMG-1125.jpg" alt="App Icon">
-    <h1>Discover Verified Jobs Abroad</h1>
-    <p>Access international job opportunities with potential visa sponsorship. Explore or download our app now!</p>
-    <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="btn">Download on App Store</a>
-    <a href="https://globalworkvisajobs.com" class="btn">Browse Jobs</a>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://i.ibb.co/s9pxG7yM/IMG-1125.jpg" alt="Global Work Visa Jobs App Icon">
+        <h1>Find Jobs Abroad Easily</h1>
+        <p>Discover verified international job opportunities and explore work visa sponsorship options. Your next career move is just a click away.</p>
+        <div class="buttons">
+            <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank">Download App</a>
+            <a href="https://globalworkvisajobs.com" target="_blank">Browse Jobs</a>
+        </div>
+    </section>
 
-  <!-- Features Section -->
-  <section class="features">
-    <h2>Why Choose Global Work Visa Jobs?</h2>
-    <ul>
-      <li>Aggregated job listings from verified sources</li>
-      <li>Regularly updated international opportunities</li>
-      <li>User-friendly search by country, industry, and visa availability</li>
-      <li>Resources for work visa guidance and interview preparation</li>
-    </ul>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Global Work Visa Jobs</p>
-    <p>
-      <a href="index.html">Home</a> | 
-      <a href="privacy/index.html">Privacy Policy</a> | 
-      <a href="about/index.html">About Us</a>
-    </p>
-    <p>Contact: <a href="mailto:globalworkvisajobs@gmail.com">globalworkvisajobs@gmail.com</a></p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <a href="/">Home</a>
+        <a href="/about">About Us</a>
+        <a href="/privacy">Privacy Policy</a>
+        <p>&copy; 2026 Global Work Visa Jobs. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
