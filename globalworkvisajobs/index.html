@@ -1,65 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Work Visa Jobs</title>
-  <link rel="icon" href="https://i.ibb.co/s9pxG7yM/IMG-1125.jpg" type="image/png">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Work Visa Jobs</title>
+<style>
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0d6efd; /* Blue */
+}
+
+nav .logo {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px 50px;
+  background: #f8f9fa;
+}
+
+.hero .app-icon {
+  width: 120px;
+  height: 120px;
+  max-width: 30vw;
+  max-height: 30vw;
+  object-fit: contain;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #0d6efd; /* Blue */
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero .btn {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.hero .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Features Section */
+.features {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0d6efd;
+}
+
+.features .feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.features .feature {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.features .feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.features .feature h3 {
+  margin-bottom: 15px;
+  color: #0d6efd;
+}
+
+.features .feature p {
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .features .feature-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="#home" class="logo">Global Work Visa Jobs</a>
-      <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="https://bluntentertainment1-arch.github.io/globalworkvisajobs/privacy" target="_blank">Privacy Policy</a></li>
-      </ul>
-    </div>
-  </nav>
+<!-- Navbar -->
+<nav>
+  <a href="#" class="logo">Global Work Visa Jobs</a>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="https://bluntentertainment1-arch.github.io/globalworkvisajobs/privacy" target="_blank">Privacy Policy</a></li>
+    <li><a href="#">About Us</a></li>
+  </ul>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-shapes">
-      <div class="shape shape1"></div>
-      <div class="shape shape2"></div>
-      <div class="shape shape3"></div>
-    </div>
-    <div class="hero-content container">
-      <div class="hero-text">
-        <img src="https://i.ibb.co/s9pxG7yM/IMG-1125.jpg" alt="Global Work Visa Jobs App Icon" class="app-icon animate-fade">
-        <h1 class="animate-fade delay-1">Find Verified Work Opportunities Abroad</h1>
-        <p class="animate-fade delay-2">Discover jobs across Europe and international destinations with work visa sponsorship. Fast, reliable, and easy to use.</p>
-        <div class="buttons animate-fade delay-3">
-          <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" class="btn btn-primary">Download App</a>
-          <a href="https://globalworkvisajobs.com" target="_blank" class="btn btn-secondary">Browse Jobs</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- Hero Section -->
+<section class="hero">
+  <img src="https://i.ibb.co/s9pxG7yM/IMG-1125.jpg" alt="Global Work Visa Jobs App Icon" class="app-icon">
+  <h1>Discover Jobs Abroad With Ease</h1>
+  <p>Global Work Visa Jobs connects job seekers worldwide to verified international employment opportunities. Explore job listings, download our app, or browse directly from our website.</p>
+  <div class="btns">
+    <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="btn" target="_blank">Download on App Store</a>
+    <a href="https://globalworkvisajobs.com" class="btn" target="_blank">Browse Jobs</a>
+  </div>
+</section>
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Global Work Visa Jobs connects job seekers to verified international work opportunities with potential visa sponsorship. Our mission is to make global job searching simple, transparent, and accessible.</p>
-      <ul>
-        <li><strong>Job Aggregation:</strong> Verified job listings from trusted sources.</li>
-        <li><strong>Daily Updates:</strong> Fresh opportunities across multiple industries.</li>
-        <li><strong>Career Resources:</strong> Guidance on visas, interviews, and international job search tips.</li>
-      </ul>
+<!-- Features Section -->
+<section class="features">
+  <h2>Why Choose Global Work Visa Jobs?</h2>
+  <div class="feature-list">
+    <div class="feature">
+      <h3>Verified Listings</h3>
+      <p>All job opportunities are aggregated from trusted sources, ensuring legitimacy and transparency for international applicants.</p>
     </div>
-  </section>
+    <div class="feature">
+      <h3>Daily Updates</h3>
+      <p>Stay updated with new opportunities every day across healthcare, IT, construction, logistics, and skilled trades.</p>
+    </div>
+    <div class="feature">
+      <h3>Easy to Use</h3>
+      <p>Clean interface with intuitive search filters by country, job category, visa sponsorship availability, and industry.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Global Work Visa Jobs. All rights reserved.</p>
-    </div>
-  </footer>
+<!-- Footer -->
+<footer>
+  <p>&copy; 2026 Global Work Visa Jobs. All rights reserved.</p>
+  <p>Contact: <a href="mailto:globalworkvisajobs@gmail.com">globalworkvisajobs@gmail.com</a></p>
+</footer>
 
 </body>
 </html>
