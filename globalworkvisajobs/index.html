@@ -1,36 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Work Visa Jobs</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Work Visa Jobs</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Global Work Visa Jobs</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h2>Find Work Opportunities Abroad</h2>
-            <p>Discover jobs that offer visa sponsorship in Europe and beyond.</p>
-            <div class="buttons">
-                <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="btn">Download App</a>
-                <a href="https://globalworkvisajobs.com" class="btn">Browse Jobs Online</a>
-            </div>
-        </section>
-    </main>
+<header>
+  <h1>Global Work Visa Jobs</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#privacy">Privacy Policy</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <footer>
-        <p>&copy; 2026 Global Work Visa Jobs</p>
-    </footer>
+<section class="hero" id="home">
+  <h2>Find Verified Work Opportunities Abroad</h2>
+  <p>Discover jobs across Europe and international destinations with work visa sponsorship. Easy, fast, and reliable.</p>
+  <div class="buttons">
+    <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" class="btn">Download App</a>
+    <a href="https://globalworkvisajobs.com" target="_blank" class="btn">Browse Jobs</a>
+  </div>
+</section>
+
+<main>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Global Work Visa Jobs is an online platform helping job seekers discover employment opportunities across Europe and other international destinations that may offer work visa sponsorship.</p>
+    <h3>Our Mission</h3>
+    <p>We bridge the gap between global job seekers and employers offering legitimate overseas employment opportunities.</p>
+    <h3>What We Do</h3>
+    <ul>
+      <li><strong>Job Aggregation:</strong> Collects verified job listings from official portals.</li>
+      <li><strong>Daily Updates:</strong> Recent opportunities across multiple industries.</li>
+      <li><strong>Career Resources:</strong> Guidance, interview tips, and scam awareness.</li>
+    </ul>
+    <h3>Transparency & Disclaimer</h3>
+    <p>We do not guarantee employment, interviews, visa approvals, or immigration outcomes. All listings are sourced from public platforms; verify details directly with the employer.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>Effective Date: February 23, 2026</p>
+    <ul>
+      <li>We do not require accounts or personal info from users.</li>
+      <li>We may collect non-personally identifiable info like browser type, device type, pages visited.</li>
+      <li>Cookies are used to enhance user experience.</li>
+      <li>Google AdMob ads may appear; Google may use cookies.</li>
+      <li>Third-party services may use cookies or similar technologies.</li>
+      <li>EEA/UK users have rights to consent and withdraw.</li>
+      <li>We implement security measures and do not collect info from children under 13.</li>
+    </ul>
+    <p>Contact: <a href="mailto:globalworkvisajobs@gmail.com">globalworkvisajobs@gmail.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Global Work Visa Jobs. All rights reserved.</p>
+</footer>
+
+<script>
+  // Smooth scroll for navigation links
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+
 </body>
 </html>
