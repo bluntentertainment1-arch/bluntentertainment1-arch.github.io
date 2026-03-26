@@ -1,237 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Global Work Visa Jobs</title>
-<style>
-/* Reset & Base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Work Visa Jobs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-body {
-  background-color: #ffffff;
-  color: #000000;
-  line-height: 1.6;
-}
+    body {
+      background-color: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
 
-/* Navbar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: #0d6efd; /* Blue */
-}
+    a {
+      text-decoration: none;
+      color: #007bff; /* Primary blue */
+      transition: 0.3s;
+    }
 
-nav .logo {
-  font-weight: bold;
-  color: #ffffff;
-  font-size: 1.3rem;
-  text-decoration: none;
-}
+    a:hover {
+      opacity: 0.8;
+    }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #111; /* Black background */
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  transition: 0.3s;
-}
+    nav .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+    }
 
-nav ul li a:hover {
-  opacity: 0.8;
-}
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
 
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 80px 20px 50px;
-  background: #f8f9fa;
-}
+    nav ul li a {
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+    }
 
-.hero .app-icon {
-  width: 120px;
-  height: 120px;
-  max-width: 30vw;
-  max-height: 30vw;
-  object-fit: contain;
-  border-radius: 20px;
-  margin-bottom: 25px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px 60px 20px;
+      background: linear-gradient(135deg, #007bff 0%, #00aaff 100%);
+      color: #fff;
+    }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #0d6efd; /* Blue */
-}
+    .hero img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
 
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
 
-.hero .btns {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
 
-.hero .btn {
-  padding: 15px 30px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #0d6efd;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-  text-decoration: none;
-}
+    .hero .buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-.hero .btn:hover {
-  background-color: #0056b3;
-}
+    .hero .buttons a {
+      background-color: #fff;
+      color: #007bff;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
 
-/* Features Section */
-.features {
-  padding: 50px 20px;
-  max-width: 1200px;
-  margin: auto;
-}
+    .hero .buttons a:hover {
+      background-color: #e6e6e6;
+    }
 
-.features h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #0d6efd;
-}
+    /* Features Section */
+    .features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 20px;
+      background-color: #f7f9fc;
+    }
 
-.features .feature-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
+    .features h2 {
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #007bff;
+      font-weight: 700;
+    }
 
-.features .feature {
-  background: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 25px;
-  width: 280px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      width: 100%;
+    }
 
-.features .feature:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
+    .feature-card {
+      background-color: #fff;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: 0.3s;
+    }
 
-.features .feature h3 {
-  margin-bottom: 15px;
-  color: #0d6efd;
-}
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
 
-.features .feature p {
-  font-size: 0.95rem;
-}
+    .feature-card h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #007bff;
+      font-weight: 600;
+    }
 
-/* Footer */
-footer {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 30px 20px;
-  text-align: center;
-}
+    .feature-card p {
+      font-size: 16px;
+      color: #333;
+    }
 
-footer a {
-  color: #0d6efd;
-  text-decoration: none;
-}
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-footer a:hover {
-  opacity: 0.8;
-}
+    footer a {
+      color: #007bff;
+      margin: 0 10px;
+    }
 
-/* Responsive */
-@media(max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-  }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 28px;
+      }
 
-  .features .feature-list {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-</style>
+      .hero p {
+        font-size: 16px;
+      }
+    }
+
+  </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav>
-  <a href="#" class="logo">Global Work Visa Jobs</a>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="https://bluntentertainment1-arch.github.io/globalworkvisajobs/privacy" target="_blank">Privacy Policy</a></li>
-    <li><a href="#">About Us</a></li>
-  </ul>
-</nav>
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html" class="logo">Global Work Visa Jobs</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy">Privacy Policy</a></li>
+      <li><a href="about">About Us</a></li>
+    </ul>
+  </nav>
 
-<!-- Hero Section -->
-<section class="hero">
-  <img src="https://i.ibb.co/s9pxG7yM/IMG-1125.jpg" alt="Global Work Visa Jobs App Icon" class="app-icon">
-  <h1>Discover Jobs Abroad With Ease</h1>
-  <p>Global Work Visa Jobs connects job seekers worldwide to verified international employment opportunities. Explore job listings, download our app, or browse directly from our website.</p>
-  <div class="btns">
-    <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="btn" target="_blank">Download on App Store</a>
-    <a href="https://globalworkvisajobs.com" class="btn" target="_blank">Browse Jobs</a>
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="https://i.ibb.co/s9pxG7yM/IMG-1125.jpg" alt="App Icon">
+    <h1>Discover Work Opportunities Abroad</h1>
+    <p>Find verified jobs that may offer work visa sponsorship across Europe and other international destinations. Stay updated with daily job listings and career resources.</p>
+    <div class="buttons">
+      <a href="https://apps.apple.com/app/idYOURAPPID" target="_blank">Download on App Store</a>
+      <a href="https://globalworkvisajobs.com">Browse Job Listings</a>
+    </div>
+  </section>
 
-<!-- Features Section -->
-<section class="features">
-  <h2>Why Choose Global Work Visa Jobs?</h2>
-  <div class="feature-list">
-    <div class="feature">
-      <h3>Verified Listings</h3>
-      <p>All job opportunities are aggregated from trusted sources, ensuring legitimacy and transparency for international applicants.</p>
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Choose Global Work Visa Jobs?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Verified Listings</h3>
+        <p>We aggregate job opportunities from trusted sources, making your international job search easier and safer.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Daily Updates</h3>
+        <p>Access recently published job opportunities across multiple industries including healthcare, IT, logistics, and more.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Career Resources</h3>
+        <p>Get guidance on work visas, interview preparation, and tips to avoid recruitment scams.</p>
+      </div>
+      <div class="feature-card">
+        <h3>User-Friendly</h3>
+        <p>Our clean interface helps you filter jobs by country, category, industry, and visa sponsorship availability.</p>
+      </div>
     </div>
-    <div class="feature">
-      <h3>Daily Updates</h3>
-      <p>Stay updated with new opportunities every day across healthcare, IT, construction, logistics, and skilled trades.</p>
-    </div>
-    <div class="feature">
-      <h3>Easy to Use</h3>
-      <p>Clean interface with intuitive search filters by country, job category, visa sponsorship availability, and industry.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer>
-  <p>&copy; 2026 Global Work Visa Jobs. All rights reserved.</p>
-  <p>Contact: <a href="mailto:globalworkvisajobs@gmail.com">globalworkvisajobs@gmail.com</a></p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Global Work Visa Jobs</p>
+    <p>
+      <a href="privacy">Privacy Policy</a> | 
+      <a href="about">About Us</a> | 
+      <a href="index.html">Home</a>
+    </p>
+    <p>Contact: <a href="mailto:globalworkvisajobs@gmail.com">globalworkvisajobs@gmail.com</a></p>
+  </footer>
 
 </body>
 </html>
