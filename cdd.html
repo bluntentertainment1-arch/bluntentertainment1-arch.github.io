@@ -8,24 +8,33 @@
 <style>
 body {
     font-family: 'Georgia', serif;
-    background-color: #fafafa;
-    color: #1a1a1a;
+    background: linear-gradient(135deg, #f5f7fa, #eef1f5);
     margin: 0;
     padding: 0;
+    color: #1a1a1a;
 }
 
 .container {
     max-width: 820px;
-    margin: auto;
-    padding: 30px 20px;
-    background: #fff;
+    margin: 40px auto;
+    padding: 35px 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .category {
     text-transform: uppercase;
     font-size: 12px;
-    letter-spacing: 1px;
-    color: #888;
+    letter-spacing: 1.5px;
+    color: #999;
     margin-bottom: 10px;
 }
 
@@ -65,22 +74,52 @@ ul {
 .quote {
     font-size: 22px;
     font-style: italic;
-    border-left: 4px solid #000;
+    border-left: 4px solid #111;
     padding-left: 15px;
     margin: 30px 0;
 }
 
 .divider {
     height: 1px;
-    background: #e5e5e5;
+    background: #eaeaea;
     margin: 40px 0;
 }
 
-.cta-section {
-    background: #111;
-    color: #fff;
-    padding: 30px;
+.highlight-box {
+    background: #f7f9fc;
+    padding: 18px;
     border-radius: 8px;
+    margin: 25px 0;
+    border-left: 4px solid #111;
+}
+
+/* WhatsApp CTA block */
+.whatsapp-cta {
+    background: #25D366;
+    color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.whatsapp-cta a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 22px;
+    background: #fff;
+    color: #25D366;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Bottom CTA */
+.cta-section {
+    background: linear-gradient(135deg, #111, #222);
+    color: #fff;
+    padding: 35px;
+    border-radius: 10px;
     margin: 40px 0;
     text-align: center;
 }
@@ -88,19 +127,27 @@ ul {
 .cta-section a {
     display: inline-block;
     margin-top: 15px;
-    padding: 12px 22px;
+    padding: 12px 24px;
     background: #fff;
     color: #111;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
-.highlight-box {
-    background: #f5f5f5;
-    padding: 15px;
-    border-radius: 6px;
-    margin: 25px 0;
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
 }
 </style>
 </head>
@@ -108,6 +155,8 @@ ul {
 <body>
 
 <div class="container">
+
+<img src="https://i.postimg.cc/yNfGSC1L/2182C3C1-9B63-48AE-966F-267F990F2C17.png" class="thumbnail">
 
 <div class="category">Music Promotion</div>
 
@@ -129,13 +178,7 @@ After releasing a track that barely crossed a few hundred streams, I decided to 
 
 <h2>The Visibility Problem</h2>
 
-<p>
-Spotify’s algorithm doesn’t reward effort — it rewards activity.
-</p>
-
-<p>
-Songs that gain traction usually already have:
-</p>
+<p>Spotify’s algorithm doesn’t reward effort — it rewards activity.</p>
 
 <ul>
 <li>Consistent streams</li>
@@ -143,17 +186,9 @@ Songs that gain traction usually already have:
 <li>Listener engagement</li>
 </ul>
 
-<p>
-Without these, your track simply doesn’t get pushed.
-</p>
-
 <div class="divider"></div>
 
 <h2>What Doesn’t Work Anymore</h2>
-
-<p>
-Like many artists, I tried the traditional route:
-</p>
 
 <ul>
 <li>Posting on Instagram and TikTok</li>
@@ -161,12 +196,8 @@ Like many artists, I tried the traditional route:
 <li>Submitting to free playlists</li>
 </ul>
 
-<p>
-The results were predictable — minimal growth and no real momentum.
-</p>
-
 <div class="highlight-box">
-Free promotion often leads to slow or zero results. The reach is limited, and competition is extremely high.
+Free promotion often leads to slow or zero results.
 </div>
 
 <div class="divider"></div>
@@ -174,30 +205,12 @@ Free promotion often leads to slow or zero results. The reach is limited, and co
 <h2>Testing a Playlist Promotion Service</h2>
 
 <p>
-Instead of guessing, I decided to try a structured promotion approach.
-</p>
-
-<p>
-The service I used focused on:
-</p>
-
-<ul>
-<li>Curated playlist placements</li>
-<li>Real listeners (no bots)</li>
-<li>Fast campaign activation</li>
-</ul>
-
-<p>
-What stood out immediately was the simplicity.
-</p>
-
-<p>
-There were no long forms or complicated dashboards. Activation was done instantly, and the process continued via WhatsApp.
+The process was simple — no dashboards, no stress. Activation happened quickly, and everything continued via WhatsApp.
 </p>
 
 <p>
 👉 <a href="https://bluntplaylists.store" target="_blank">
-You can explore the bluntplaylist website here
+Explore the bluntplaylist website
 </a>
 </p>
 
@@ -205,96 +218,51 @@ You can explore the bluntplaylist website here
 
 <h2>The Results</h2>
 
-<p>
-Within days, the difference was noticeable:
-</p>
-
 <ul>
 <li>Streams increased consistently</li>
-<li>The track appeared on multiple playlists</li>
-<li>Listeners came from different regions</li>
+<li>Playlist placements improved</li>
+<li>New listeners discovered the track</li>
 </ul>
 
-<p>
-It wasn’t artificial or inflated — it was steady, organic growth.
-</p>
-
 <div class="quote">
-“The biggest shift wasn’t just the streams — it was finally seeing real traction.”
+“The biggest shift wasn’t just streams — it was real traction.”
+</div>
+
+<!-- 🔥 WHATSAPP CTA (HIGH INTENT POSITION) -->
+<div class="whatsapp-cta">
+<h2>Start Your Promotion</h2>
+<p>Ready to get real streams and playlist placements?</p>
+<a href="https://wa.me/message/I5ASBQKJQKJCF1" target="_blank">
+Start on WhatsApp
+</a>
 </div>
 
 <div class="divider"></div>
 
 <h2>Why This Strategy Works</h2>
 
-<p>
-Playlist promotion works because it creates the signals Spotify looks for:
-</p>
-
 <ul>
-<li>Active listening behavior</li>
-<li>Consistent engagement</li>
-<li>Audience discovery</li>
+<li>Real listener activity</li>
+<li>Algorithm signals</li>
+<li>Consistent exposure</li>
 </ul>
-
-<p>
-Once these signals are present, the algorithm becomes more likely to push your track further.
-</p>
 
 <div class="divider"></div>
-
-<h2>What to Watch Out For</h2>
-
-<p>
-Not every service delivers real results.
-</p>
-
-<p>
-Some rely on:
-</p>
-
-<ul>
-<li>Fake playlists</li>
-<li>Bots or artificial streams</li>
-<li>Short-term spikes with no retention</li>
-</ul>
-
-<p>
-These can harm your profile long-term.
-</p>
-
-<p>
-The key is choosing a platform that focuses on genuine audience reach.
-</p>
-
-<div class="cta-section">
-<h2>Start Getting Real Streams</h2>
-<p>
-If you’re ready to move beyond guesswork and start building real momentum, a structured playlist promotion approach is one of the fastest ways to begin.
-</p>
-
-<a href="https://bluntplaylists.store" target="_blank">
-Visit the bluntplaylist website
-</a>
-</div>
 
 <h2>Final Thoughts</h2>
 
 <p>
-Success on Spotify rarely happens by chance.
+Success on Spotify comes from visibility + strategy.
 </p>
 
-<p>
-It’s a combination of quality music and strategic exposure.
-</p>
+<div class="cta-section">
+<h2>Explore Promotion Options</h2>
+<p>See available packages and start growing your music today.</p>
 
-<p>
-For independent artists, playlist promotion isn’t just an option anymore — it’s often the starting point.
-</p>
-
-<p>
-And once your music starts reaching the right listeners, everything else becomes easier.
-</p>
+<a href="https://bluntplaylists.store" target="_blank">
+Visit Website
+</a>
+</div>
 
 </div>
 
